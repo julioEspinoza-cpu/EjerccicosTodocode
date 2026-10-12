@@ -39,8 +39,8 @@ public class PruebaHashMap {
 }
 
 /*
- * Es importante que te acuerde de la clave valor de cadda cosa por que es lo
- * que funciona apara buscar, lo podes
+ * Es importante que te acuerde de la clave valor de cada cosa por que es lo
+ * que funciona para buscar, lo podes
  * cabiar con los diferentes metodos en el ejemplo see utiliza containsVAlue,
  * pero lo poder hacer el con el key tambien.
  * revisa el codio y fijate cual es mejor para practicar .
