@@ -26,4 +26,22 @@ public class main {
 
     }
 }
-// faltan los
+/*
+ * REQUISITOS DEL TRABAJO - EVENTOS:
+ * 
+ * - Crear una ArrayList de tipo Evento. Crear 5 eventos diferentes y guardarlos
+ * en la collection.
+ * - Recorrer la ArrayList y mostrar por pantalla el nombre, tipo de evento y
+ * cantidad de invitados de cada uno.
+ * - Crear un método llamado calcularCostoPorInvitado() que retorne el precio
+ * del evento dividido por la
+ * cantidad de invitados. Utilizar el método para mostrar por pantalla el costo
+ * por invitado de cada evento.
+ * - Crear un método llamado cancelarReserva() que permita cambiar el estado de
+ * reserva del evento a cancelado.
+ * - Cancelar uno de los eventos y mostrar por pantalla su nombre junto con su
+ * nuevo estado.
+ * - Recorrer la ArrayList y mostrar únicamente los eventos que continúan
+ * reservados.
+ * - Buscar y mostrar el evento que tenga la mayor cantidad de invitados.
+ */
