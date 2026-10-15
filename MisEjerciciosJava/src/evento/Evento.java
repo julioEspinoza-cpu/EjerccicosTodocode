@@ -7,19 +7,20 @@ public class Evento {
     String tipoEvento = "";
     int cantidadInvitados = 0;
     double precio = 0;
-    boolean estado = true;
+    boolean reservado = true;
 
     public Evento() {
 
     }
 
-    public Evento(int id, String nombreEvento, String tipoEvento, int catidadInvitados, double precio, boolean estado) {
+    public Evento(int id, String nombreEvento, String tipoEvento, int catidadInvitados, double precio,
+            boolean reservado) {
         this.id = id;
         this.nombreEvento = nombreEvento;
         this.tipoEvento = tipoEvento;
         this.cantidadInvitados = catidadInvitados;
         this.precio = precio;
-        this.estado = estado;
+        this.reservado = reservado;
     }
 
     public int getId() {
@@ -62,18 +63,24 @@ public class Evento {
         this.precio = precio;
     }
 
-    public boolean isEstado() {
-        return estado;
-    }
-
-    public void setEstado(boolean estado) {
-        this.estado = estado;
-    };
-
     public double calcularPrecioTotal() {
 
         double total = precio / cantidadInvitados;
         return total;
+    }
+
+    public boolean isReservado() {
+        return this.reservado;
+    }
+
+    public void setReservado(boolean reservado) {
+        this.reservado = reservado;
+    }
+
+    // 3. MÉTODO DE ACCIÓN: Cambia el estado directamente a falso (requisito del
+    // trabajo)
+    public void cancelarReserva() {
+        this.reservado = false;
     }
 
     @Override
@@ -84,7 +91,7 @@ public class Evento {
                 ", tipoEvento='" + tipoEvento + '\'' +
                 ", catidadInvitados=" + cantidadInvitados +
                 ", precio=" + precio +
-                ", estado=" + estado +
+                ", reservado=" + reservado +
                 '}';
     }
 

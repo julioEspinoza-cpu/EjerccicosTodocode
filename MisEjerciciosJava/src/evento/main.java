@@ -24,8 +24,16 @@ public class main {
 
         System.out.println("El precio del evento Bautismo por invitado : " + evento.get(2).calcularPrecioTotal());
 
+        // Cancelamos el primer evento (el casamiento que está en el índice 0)
+        evento.get(3).setReservado(false);
+
+        // Mostramos por pantalla su nombre junto con su nuevo estado (falso/cancelado)
+        System.out.println(
+                "Evento: " + evento.get(3).getNombreEvento() + " | ¿Está reservado?: " + evento.get(3).isReservado());
+
     }
 }
+
 /*
  * REQUISITOS DEL TRABAJO - EVENTOS:
  * 
