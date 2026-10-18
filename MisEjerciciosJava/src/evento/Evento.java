@@ -63,12 +63,6 @@ public class Evento {
         this.precio = precio;
     }
 
-    public double calcularPrecioTotal() {
-
-        double total = precio / cantidadInvitados;
-        return total;
-    }
-
     public boolean isReservado() {
         return this.reservado;
     }
@@ -77,10 +71,15 @@ public class Evento {
         this.reservado = reservado;
     }
 
-    // 3. MÉTODO DE ACCIÓN: Cambia el estado directamente a falso (requisito del
-    // trabajo)
+    public double calcularPrecioTotal() {
+
+        double total = precio / cantidadInvitados;
+        return total;
+    }
+
     public void cancelarReserva() {
-        this.reservado = false;
+
+        reservado = false;
     }
 
     @Override
